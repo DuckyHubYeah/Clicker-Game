@@ -3,28 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicker Game</title>
+    <title>Donut Clicker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <h1>🍩 Donut Clicker</h1>
+<div class="game">
 
-    <button id="clickButton">Click Me</button>
+    <!-- LEFT SIDE -->
+    <div class="main">
+        <h1>🍩 Donut Clicker</h1>
 
-    <p id="counterText">Donuts: 0</p>
-    <p id="perClickText">Per Click: 1</p>
-    <p id="autoText">Auto: 0/sec</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png"
+             id="donutButton" />
 
-    <h2>Shop</h2>
+        <p id="counterText">Donuts: 0</p>
+        <p id="perClickText">Per Click: 1</p>
+        <p id="autoText">Auto: 0/sec</p>
 
-    <div class="shop">
-        <button onclick="buyUpgrade('click1')">Mouse Click (+1) - 50</button>
-        <button onclick="buyUpgrade('auto1')">Automation (+1/sec) - 100</button>
-        <button onclick="buyUpgrade('click10')">Better Mouse (+10) - 500</button>
-        <button onclick="buyUpgrade('auto20')">Family Help (+20/sec) - 550</button>
+        <button onclick="resetGame()">Reset Save</button>
     </div>
+
+    <!-- RIGHT SIDE (SHOP) -->
+    <div class="shop">
+        <h2>Shop</h2>
+
+        <button onclick="buyUpgrade('click1')" id="click1">
+            Mouse Click (+1) - 50
+        </button>
+
+        <button onclick="buyUpgrade('auto1')" id="auto1">
+            Automation (+1/sec) - 100
+        </button>
+
+        <button onclick="buyUpgrade('click10')" id="click10">
+            Better Mouse (+10) - 500
+        </button>
+
+        <button onclick="buyUpgrade('auto20')" id="auto20">
+            Family Help (+20/sec) - 550
+        </button>
+    </div>
+
 </div>
 
 <script src="script.js"></script>
