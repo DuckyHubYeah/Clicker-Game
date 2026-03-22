@@ -8,14 +8,25 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>Simple Clicker Game</h1>
-        
-        <button id="clickButton">Click Me</button>
-        
-        <p id="counterText">Clicks: 0</p>
-    </div>
+<div class="container">
+    <h1>🍩 Donut Clicker</h1>
 
-    <script src="script.js"></script>
+    <button id="clickButton">Click Me</button>
+
+    <p id="counterText">Donuts: 0</p>
+    <p id="perClickText">Per Click: 1</p>
+    <p id="autoText">Auto: 0/sec</p>
+
+    <h2>Shop</h2>
+
+    <div class="shop">
+        <button onclick="buyUpgrade('click1')">Mouse Click (+1) - 50</button>
+        <button onclick="buyUpgrade('auto1')">Automation (+1/sec) - 100</button>
+        <button onclick="buyUpgrade('click10')">Better Mouse (+10) - 500</button>
+        <button onclick="buyUpgrade('auto20')">Family Help (+20/sec) - 550</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
