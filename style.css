@@ -1,37 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
-    height: 100vh;
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
 }
 
-.container {
-    margin-top: 60px;
+/* Layout */
+.game {
+    display: flex;
+    height: 100vh;
 }
 
-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    margin: 10px;
-    border: none;
-    border-radius: 10px;
+/* Left side */
+.main {
+    flex: 2;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Donut button */
+#donutButton {
+    width: 200px;
     cursor: pointer;
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
-    color: white;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
     transition: 0.2s;
 }
 
-button:hover {
-    transform: scale(1.05);
+#donutButton:hover {
+    transform: scale(1.1);
 }
 
-button:active {
-    transform: scale(0.95);
+#donutButton:active {
+    transform: scale(0.9);
 }
 
+/* Right side shop */
 .shop {
-    margin-top: 20px;
+    flex: 1;
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.shop h2 {
+    text-align: center;
+}
+
+.shop button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: white;
+}
+
+/* Disabled button */
+.shop button:disabled {
+    background: grey;
+    cursor: not-allowed;
 }
