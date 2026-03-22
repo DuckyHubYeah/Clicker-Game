@@ -1,20 +1,44 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+
+    /* Gradient background */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
 }
 
 .container {
     margin-top: 100px;
 }
 
+/* Better button */
 button {
-    padding: 20px 40px;
-    font-size: 20px;
+    padding: 20px 50px;
+    font-size: 22px;
+    border: none;
+    border-radius: 12px;
     cursor: pointer;
+
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: white;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Click effect */
+button:active {
+    transform: scale(0.95);
 }
 
 p {
-    font-size: 24px;
+    font-size: 26px;
     margin-top: 20px;
 }
