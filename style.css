@@ -3,42 +3,35 @@ body {
     text-align: center;
     margin: 0;
     height: 100vh;
-
-    /* Gradient background */
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
 }
 
 .container {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
-/* Better button */
 button {
-    padding: 20px 50px;
-    font-size: 22px;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
-
     background: linear-gradient(45deg, #ff7e5f, #feb47b);
     color: white;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: all 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: 0.2s;
 }
 
-/* Hover effect */
 button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-/* Click effect */
 button:active {
     transform: scale(0.95);
 }
 
-p {
-    font-size: 26px;
+.shop {
     margin-top: 20px;
 }
